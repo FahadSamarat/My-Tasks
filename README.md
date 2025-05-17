@@ -9,4 +9,4 @@
 
 **The project wireframe:**
 
-![TM](images\TM.jpg)
+![TM](images/TM.jpg)
