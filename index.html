@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+      <body>
+    <nav class="nav">
+      <div class="logo">Task Manager</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+<div class="task-container">
+      <h2>Task Manager</h2>
+
+      <input type="text" id="itemInput" placeholder="Enter a Task" />
+      <p1>Priority: </p1>
+
+      <select id="categorySelector">
+        <option value="low">Low</option>
+        <option value="high">High</option>
+        <option value="Onhold">On Hold</option>
+      </select>
+
+      <button id="addButton">Add Task</button>
+
+      <div class="filter-options">
+        <label>
+          <input type="radio" name="filter" value="all" checked /> All
+        </label>
+        <label>
+          <input type="radio" name="filter" value="bought" /> Done
+        </label>
+        <label>
+          <input type="radio" name="filter" value="not-bought" /> Not Done
+        </label>
+      </div>
+
+<ul id="TaskList"><li>
+      <span>Assignment</span>
+      <span class="category">Priority: High</span>
+              <button onclick="switchStatus(0)">
+          Mark as Done
+        </button>
+      <button onclick="deleteItem(0)">Delete Task</button>
+
+    </li></ul>
+    </div>
+
+
+    <footer>
+      <p>All rights reserved</p>
+    </footer>
+</body>
+</html>
